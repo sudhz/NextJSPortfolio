@@ -1,0 +1,27 @@
+.navContainer {
+    transition: var(--transition);
+}
+
+.active {
+    border-bottom: 5px solid;
+    border-image-slice: 1;
+}
+
+.navItem {
+    transition: var(--transition);
+}
+
+.navItem:hover {
+    transform: translateY(-3px);
+    transition: var(--transition);
+}
+
+@media (max-width: 768px) {
+    .link {
+        font-size: 0.875rem;
+    }
+}
+
+.link:hover {
+    color: unset;
+}

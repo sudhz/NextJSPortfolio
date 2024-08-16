@@ -1,0 +1,30 @@
+.footer {
+    color: var(--dark);
+}
+
+.dark {
+    background-color: var(--dark);
+    color: var(--white);
+    transition: all 400ms;
+}
+
+.dark a,
+.dark i,
+.dark li {
+    color: var(--white);
+    transition: color 400ms;
+}
+
+.dark a:visited {
+    color: var(--white);
+}
+
+.dark .footer {
+    color: var(--white);
+}
+
+.light {
+    background-color: var(--white);
+    color: var(--dark);
+    transition: all 400ms;
+}

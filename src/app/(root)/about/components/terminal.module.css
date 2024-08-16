@@ -1,0 +1,58 @@
+.idiomatic {
+    padding-left: 0.5rem;
+    height: 1rem;
+}
+
+.idiomaticRed {
+    color: var(--red);
+}
+
+.idiomaticAmber {
+    color: var(--yellow);
+}
+
+.idiomaticGreen {
+    color: var(--green);
+}
+
+.terminalParagraph {
+    margin: 1rem 0;
+    color: var(--white);
+}
+
+.terminalListItem {
+    margin: 1rem 0;
+    color: var(--white);
+}
+
+.terminalAnchor {
+    animation: changeColors 3s infinite;
+    font-weight: bold;
+}
+
+.terminalAnchor:visited {
+    animation: changeColors 3s infinite;
+    font-weight: bold;
+}
+
+.shadowed {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+@keyframes changeColors {
+    0% {
+        color: #00a47f;
+    }
+
+    33.3% {
+        color: #1d91e3;
+    }
+
+    66.6% {
+        color: #d419fe;
+    }
+
+    100% {
+        color: #00a47f;
+    }
+}

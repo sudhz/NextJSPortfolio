@@ -1,0 +1,9 @@
+.anchor {
+    color: var(--dark);
+    transition: color 200ms ease;
+}
+
+.anchor:hover {
+    color: var(--lightgray);
+    transition: color 200ms ease;
+}
