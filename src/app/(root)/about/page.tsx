@@ -64,7 +64,7 @@ export default function About() {
             <ul className={aboutStyles.experiences}>
               {experience.achievements.map((achievement, index) => (
                 <li className={aboutStyles.experiencesListItem} key={index}>
-                  &gt;&gt; <a>{achievement}</a>
+                  &gt;&gt; {achievement}
                 </li>
               ))}
             </ul>
