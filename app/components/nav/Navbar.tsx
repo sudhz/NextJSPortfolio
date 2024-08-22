@@ -1,35 +1,26 @@
-import Link from 'next/link'
-import DarkModeToggle from '../DarkModeToggle'
-import MobileNavDropdown from './MobileNavDropdown'
-
-const Logo = ({ className }: { className?: string }) => {
-  return (
-    <img alt="logo" src="/p2logo.png" className={`w-20 ${className}`} />
-  )
-}
+import Link from "next/link";
+import DarkModeToggle from "../DarkModeToggle";
+import MobileNavDropdown from "./MobileNavDropdown";
+import Logo from "./Logo";
 
 export const navLinks = [
   {
-    label: 'about',
-    href: '/about',
-    mobile: true
+    label: "about",
+    href: "/about",
+    mobile: true,
   },
-  {
-    label: 'portfolio',
-    href: '/portfolio',
-    mobile: true
-  },
+
   {
     label: <Logo />,
-    href: '/',
-    mobile: false
+    href: "/",
+    mobile: false,
   },
   {
-    label: 'blog',
-    href: '/blog',
-    mobile: true
-  }
-]
+    label: "projects",
+    href: "/projects",
+    mobile: true,
+  },
+];
 
 const Navbar = () => {
   return (
@@ -38,7 +29,9 @@ const Navbar = () => {
         {/* desktop */}
         <ul className="menu menu-horizontal items-center gap-10 hidden md:flex">
           {navLinks.map((link, index) => (
-            <li key={index}><Link href={link.href}>{link.label}</Link></li>
+            <li key={index}>
+              <Link href={link.href}>{link.label}</Link>
+            </li>
           ))}
           <li>
             <DarkModeToggle />
@@ -46,13 +39,15 @@ const Navbar = () => {
         </ul>
         {/* mobile */}
         <MobileNavDropdown />
-        <Link href="/"><Logo className="md:hidden" /></Link>
+        <Link href="/" className="md:hidden">
+          <Logo />
+        </Link>
         <div className="md:hidden">
-          <DarkModeToggle />
+          <DarkModeToggle/>
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

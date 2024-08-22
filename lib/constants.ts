@@ -1,31 +1,20 @@
 export const skills = {
-    theObvious: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "git",
-      "npm / yarn",
-      "Rest APIs / JSON",
-      "React Hooks",
-      "fetch / axios"
-    ],
-    librariesFrameworks: [
-      "React 18",
-      "Vue 3",
-      "NextJS 14",
-      "Tailwind",
-      "MaterialUI",
-      "Ant Design",
-      "DaisyUI",
-      "Cypress",
-      "Jest",
-      "Redux",
-      "VueX"
-    ],
-    toolsOfTheTrade: [
-      "Github",
-      "Jira / Bitbucket",
-      "Strapi",
-      "Supabase"
-    ]
-  };
+  theObvious: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "Java",
+    "git",
+    "npm",
+    "Rest APIs / JSON",
+  ],
+  librariesFrameworks: [
+    "React 18",
+    "NextJS 14",
+    "Tailwind",
+    "NodeJS",
+    "Spring / Servlets",
+  ],
+  toolsOfTheTrade: ["Github", "Jira"],
+};
