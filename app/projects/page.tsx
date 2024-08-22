@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -13,7 +14,7 @@ const projects = [
 const Portfolio = () => {
   return (
     <div className="text-center">
-{/*       <p>Open Source Contributions:</p>
+      {/*       <p>Open Source Contributions:</p>
       <Link
         className="link link-primary"
         href="https://github.com/danielcranney/profileme-dev/pull/34"
@@ -26,7 +27,12 @@ const Portfolio = () => {
             key={index}
             className="flex flex-col items-center justify-center"
           >
-            <img src={project.mockup} />
+            <Image
+              src={project.mockup}
+              alt={`mockup ${index}`}
+              width={1920}
+              height={1080}
+            />
             <h1 className="text-3xl mb-2">{project.title}</h1>
             <div className="flex gap-2">
               <Link
