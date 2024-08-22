@@ -10,6 +10,7 @@ const ProfilePicture = () => {
       className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full w-[350px] md:w-2/5 p-3"
       width={1120}
       height={1120}
+      priority
     />
   );
 };

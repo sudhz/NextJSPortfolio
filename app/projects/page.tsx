@@ -32,6 +32,7 @@ const Portfolio = () => {
               alt={`mockup ${index}`}
               width={1920}
               height={1080}
+              priority
             />
             <h1 className="text-3xl mb-2">{project.title}</h1>
             <div className="flex gap-2">
