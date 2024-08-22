@@ -6,10 +6,11 @@ const ProfilePicture = () => {
   return (
     <Image
       src="/self.png"
-      alt="Profile picture of Payton"
+      alt="Profile picture of Sudhanshu"
       className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full w-[350px] md:w-2/5 p-3"
-      width={1120}
-      height={1120}
+      width={352}
+      height={352}
+      quality={100}
       priority
     />
   );

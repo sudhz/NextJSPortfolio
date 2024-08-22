@@ -30,8 +30,8 @@ const Portfolio = () => {
             <Image
               src={project.mockup}
               alt={`mockup ${index}`}
-              width={1920}
-              height={1080}
+              width={1024}
+              height={576}
               priority
             />
             <h1 className="text-3xl mb-2">{project.title}</h1>
