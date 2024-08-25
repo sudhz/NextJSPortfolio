@@ -14,6 +14,7 @@ const DarkModeToggle = () => {
   }, []);
 
   const onChangeTheme = () => {
+    console.log("theme changed", theme);
     setTheme(theme == "light" ? "dark" : "light");
   };
 

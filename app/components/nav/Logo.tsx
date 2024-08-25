@@ -6,6 +6,7 @@ import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
 const Logo = ({ className }: { className?: string }) => {
   const { theme } = useTheme();
+  console.log(theme);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -13,9 +14,7 @@ const Logo = ({ className }: { className?: string }) => {
   }, []);
 
   if (!mounted) {
-    return (
-      <AiOutlineLoading3Quarters className="animate-spin w-20 h-20" />
-    );
+    return <AiOutlineLoading3Quarters className="animate-spin w-20 h-20" />;
   }
 
   return (
