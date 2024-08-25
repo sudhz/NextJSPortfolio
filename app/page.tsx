@@ -25,7 +25,7 @@ const BulletPoints = () => {
         <a href="mailto:sudhanshumakwana@gmail.com">📧 let's get in touch!</a>
       </li>
       <li>
-        📝download my{" "}
+        📝 download my{" "}
         <a
           className="link link-primary"
           href="/SudhanshuResume.pdf"
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
         <BulletPoints />
         {/* socials */}
-        <ul className="flex justify-center text-3xl gap-12 mt-8">
+        <ul className="flex justify-center md:justify-start text-3xl gap-12 mt-8">
           {socials.map((social, index) => (
             <li
               key={index}
