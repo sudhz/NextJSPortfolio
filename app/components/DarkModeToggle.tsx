@@ -24,6 +24,7 @@ const DarkModeToggle = () => {
     <label className="btn btn-ghost swap swap-rotate">
       <input
         type="checkbox"
+        aria-label="theme-controller"
         className="theme-controller"
         onChange={onChangeTheme}
         checked={theme == "dark" ? true : false}
