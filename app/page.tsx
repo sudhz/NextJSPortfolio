@@ -44,18 +44,22 @@ const WavingHand = () => {
 
 const socials = [
   {
+    name: "Github",
     icon: <FaGithub />,
     href: "https://github.com/sudhz/",
   },
   {
+    name: "LinkedIn",
     icon: <FaLinkedin />,
     href: "https://linkedin.com/in/sudhz/",
   },
   {
+    name: "Twitter",
     icon: <FaXTwitter />,
     href: "https://x.com/sudhz_",
   },
   {
+    name: "Dev.to",
     icon: <FaDev />,
     href: "https://dev.to/sudhz_",
   },
@@ -86,7 +90,11 @@ export default function Home() {
               key={index}
               className="hover:scale-125 hover:text-white transition-all ease-in-out"
             >
-              <Link href={social.href} target="_blank">
+              <Link
+                href={social.href}
+                target="_blank"
+                aria-label={`visit my ${social.name} profile`}
+              >
                 {social.icon}
               </Link>
             </li>

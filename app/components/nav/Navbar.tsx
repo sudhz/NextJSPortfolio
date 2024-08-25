@@ -30,7 +30,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal items-center gap-10 hidden md:flex">
           {navLinks.map((link, index) => (
             <li key={index}>
-              <Link href={link.href}>{link.label}</Link>
+              <Link aria-label={`${link.label}`} href={link.href}>
+                {link.label}
+              </Link>
             </li>
           ))}
           <li>
@@ -39,11 +41,11 @@ const Navbar = () => {
         </ul>
         {/* mobile */}
         <MobileNavDropdown />
-        <Link href="/" className="md:hidden">
+        <Link href="/" aria-label="Home" className="md:hidden">
           <Logo />
         </Link>
         <div className="md:hidden">
-          <DarkModeToggle/>
+          <DarkModeToggle />
         </div>
       </div>
     </nav>

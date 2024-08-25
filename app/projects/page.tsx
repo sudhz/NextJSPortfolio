@@ -39,6 +39,7 @@ const Portfolio = () => {
             <div className="flex gap-2">
               <Link
                 href={project.live}
+                aria-label={`live link for ${project.title}`}
                 target="_blank"
                 className="btn btn-secondary"
               >
@@ -46,6 +47,7 @@ const Portfolio = () => {
               </Link>
               <Link
                 href={project.code}
+                aria-label={`source code for ${project.title}`}
                 target="_blank"
                 className="btn btn-primary"
               >
