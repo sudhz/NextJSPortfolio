@@ -21,17 +21,17 @@ const Portfolio = () => {
       >
         ProfileMe.dev
       </Link> */}
-      <div className="flex flex-wrap items-start mb-10">
+      <div className="flex justify-center mb-10">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center"
+            className="md:w-1/2 flex flex-col items-center justify-center"
           >
             <Image
               src={project.mockup}
               alt={`mockup ${index}`}
-              width={1024}
-              height={576}
+              width={1920}
+              height={1080}
               priority
             />
             <h1 className="text-3xl mb-2">{project.title}</h1>
