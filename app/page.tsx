@@ -4,15 +4,17 @@ import { FaDev, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 const ProfilePicture = () => {
   return (
-    <Image
-      src="/self.png"
-      alt="Profile picture of Sudhanshu"
-      className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full p-3"
-      width={352}
-      height={352}
-      quality={100}
-      priority
-    />
+    <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+      <Image
+        src="/self.png"
+        alt="Profile picture of Sudhanshu"
+        className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full p-3"
+        width={384}
+        height={384}
+        quality={100}
+        priority
+      />
+    </div>
   );
 };
 
@@ -39,7 +41,7 @@ const BulletPoints = () => {
 };
 
 const WavingHand = () => {
-  return <span className="animate-wave inline-block">🤚🏻</span>;
+  return <span className="animate-wave inline-block ">🤚🏻</span>;
 };
 
 const socials = [
