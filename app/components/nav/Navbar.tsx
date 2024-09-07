@@ -9,7 +9,11 @@ export const navLinks = [
     href: "/about",
     mobile: true,
   },
-
+  {
+    label: "blogs",
+    href: "/blogs",
+    mobile: true,
+  },
   {
     label: <Logo />,
     href: "/",

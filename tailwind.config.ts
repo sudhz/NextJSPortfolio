@@ -19,9 +19,15 @@ const config: Config = {
           "60%": { transform: "rotate(0.0deg)" },
           "100%": { transform: "rotate(0.0deg)" },
         },
+        shimmer: {
+          '0%': { opacity: '0.15' },
+          '50%': { opacity: '0.3' },
+          '100%': { opacity: '0.15' },
+        },
       },
       animation: {
         wave: "wave 2s ease-in-out infinite",
+        shimmer: 'shimmer 1.5s infinite linear',
       },
     },
   },

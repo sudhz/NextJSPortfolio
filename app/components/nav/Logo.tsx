@@ -2,7 +2,7 @@
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import { FaCircle } from "react-icons/fa";
 
 const Logo = ({ className }: { className?: string }) => {
   const { theme } = useTheme();
@@ -13,7 +13,7 @@ const Logo = ({ className }: { className?: string }) => {
   }, []);
 
   if (!mounted) {
-    return <AiOutlineLoading3Quarters className="animate-spin w-20 h-20" />;
+    return <FaCircle className="w-20 h-20 opacity-10 animate-shimmer" />;
   }
 
   return (
