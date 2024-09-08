@@ -8,7 +8,7 @@ const ProfilePicture = () => {
       <Image
         src="/self.png"
         alt="Profile picture of Sudhanshu"
-        className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full p-3"
+        className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full p-3 animate-scale"
         width={384}
         height={384}
         quality={100}

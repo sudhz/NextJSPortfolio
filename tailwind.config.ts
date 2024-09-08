@@ -24,10 +24,15 @@ const config: Config = {
           '50%': { opacity: '0.3' },
           '100%': { opacity: '0.15' },
         },
+        'scale': {
+          '0%': { transform: 'scale(0)' },
+          '100%': { transform: 'scale(1)' },
+        },
       },
       animation: {
         wave: "wave 2s ease-in-out infinite",
         shimmer: 'shimmer 1.5s infinite linear',
+        scale: 'scale 0.375s ease-out',
       },
     },
   },
