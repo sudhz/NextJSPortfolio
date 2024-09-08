@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaDev, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
 const ProfilePicture = () => {
   return (
@@ -61,9 +61,9 @@ const socials = [
     href: "https://x.com/sudhz_",
   },
   {
-    name: "Dev.to",
-    icon: <FaDev />,
-    href: "https://dev.to/sudhz_",
+    name: "YouTube",
+    icon: <FaYoutube />,
+    href: "https://www.youtube.com/@sudhanshumakwana/videos",
   },
 ];
 
