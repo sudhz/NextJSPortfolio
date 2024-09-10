@@ -29,8 +29,8 @@ const About = () => {
           year now, and I'm currently focused on learning Spring Boot/Hibernate,
           NextJS 14, and Data Structures/Algorithms. Once I feel I've become
           fairly proficient in my preferred stack, I plan to expand my horizons
-          to Svelte, Kafka and eventually I'll probably end up giving into the
-          Kubernetees craze.
+          to Svelte, Kafka and eventually I'll probably end up giving in to the
+          Kubernetes craze.
         </p>
       </FakeTerminalWindow>
 

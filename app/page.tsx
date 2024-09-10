@@ -27,7 +27,7 @@ const BulletPoints = () => {
         <a href="mailto:sudhanshumakwana@gmail.com">📧 let's get in touch!</a>
       </li>
       <li>
-        📝 download my{" "}
+        📝 check out my{" "}
         <a
           className="link link-primary"
           href="/SudhanshuResume.pdf"
