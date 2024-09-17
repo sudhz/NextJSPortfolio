@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaCircle } from "react-icons/fa";
+import logo from "@/public/smlogo.png";
 
 const Logo = ({ className }: { className?: string }) => {
   const { theme } = useTheme();
@@ -19,9 +20,7 @@ const Logo = ({ className }: { className?: string }) => {
   return (
     <Image
       alt="logo"
-      src="/smlogo.png"
-      width={80}
-      height={80}
+      src={logo}
       className={`${
         theme === "dark" ? "" : "invert"
       } w-20 ${className} transition-all ease-in-out`}

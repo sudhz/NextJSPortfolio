@@ -1,16 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaXTwitter, FaYoutube } from "react-icons/fa6";
+import profilePic from "@/public/self.png";
 
 const ProfilePicture = () => {
   return (
     <div className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
       <Image
-        src="/self.png"
+        src={profilePic}
         alt="Profile picture of Sudhanshu"
         className="bg-gradient-to-br from-indigo-500 to-fuchsia-500 rounded-full p-3 animate-scale"
-        width={384}
-        height={384}
         quality={100}
         priority
       />

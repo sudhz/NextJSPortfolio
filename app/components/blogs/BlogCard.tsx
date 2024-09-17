@@ -13,8 +13,8 @@ function BlogCard({ title, brief, url, imgUrl }: BlogCardProps) {
     <div className="w-5/6 sm:max-w-sm border border-black/20 rounded-lg shadow-lg">
       <Link href={url} target="_blank" rel="noopener noreferrer">
         <Image
-          width={1280}
-          height={720}
+          width={382}
+          height={215}
           className="rounded-t-lg"
           src={imgUrl}
           alt={title}

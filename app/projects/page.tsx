@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import mock1 from "@/public/mockups/mock1.png";
 
 const projects = [
   {
     title: "CodeLingo",
-    mockup: "/mockups/mock1.png",
+    mockup: mock1,
     live: "https://codelingo.netlify.app",
     code: "https://github.com/sudhz/CodeLingo",
   },
@@ -32,7 +33,6 @@ const Portfolio = () => {
               alt={`mockup ${index}`}
               width={1920}
               height={1080}
-              sizes="(min-width: 768px) 50vw"
               priority
             />
             <h1 className="text-3xl mb-2">{project.title}</h1>
